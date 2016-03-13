@@ -1,0 +1,10 @@
+.DS_Store
+
+ac-comphist.dat
+auto-save-list/*
+elpa/*
+elisp/*
+*.elc
+history
+*.log
+recentf

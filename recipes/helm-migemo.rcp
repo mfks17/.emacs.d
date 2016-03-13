@@ -1,0 +1,4 @@
+(:name helm-migemo
+      :type github
+	  :description "Migemo plug-in for helm"
+	  :url "https://github.com/emacs-jp/helm-migemo")

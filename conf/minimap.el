@@ -1,0 +1,2 @@
+;; @ minimap
+(require 'minimap)

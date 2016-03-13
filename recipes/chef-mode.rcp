@@ -1,0 +1,4 @@
+(:name chef-mode
+       :type github
+       :description Chef-mode is an Emacs minor mode to make editing Opscode Chef repositories easier.
+       :pkgname "mpasternacki/chef-mode")
