@@ -8,3 +8,4 @@ elisp/*
 history
 *.log
 recentf
+helm-doc.org
