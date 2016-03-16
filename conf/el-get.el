@@ -19,6 +19,7 @@
 (el-get 'sync
         '(el-get
           helm
+		  helm-go-package
           helm-swoop
           helm-migemo
           ace-isearch
@@ -50,4 +51,6 @@
           powerline
           helm-flycheck
           chef-mode
-          rubocop))
+          go-mode
+		  go-autocomplete
+		  go-eldoc))

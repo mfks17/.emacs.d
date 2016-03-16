@@ -1,11 +1,12 @@
 (let*
     ((user-emacs-directory
-      (substring (or load-file-name "~/.emacs.d/init.el") 0 -7))
+     (substring (or load-file-name "~/.emacs.d/init.el") 0 -7))
      (conf-list (list
                  "exec-path.el"
                  "load-path.el"
                  "el-get.el"
                  "helm.el"
+				 "helm-go-package.el"
                  "auto-complete.el"
                  "perl-mode.el"
                  "perl-completion.el"
@@ -40,7 +41,9 @@
                  "helm-flycheck.el"
                  "yasnippet.el"
                  "chef-mode.el"
-				 "rubocop.el"
+				 "go-mode.el"
+				 "go-autocomplete.el"
+				 "go-eldoc.el"
 				 "theme.el"
                  )))
   (dolist (conf conf-list)
