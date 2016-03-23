@@ -52,5 +52,8 @@
           helm-flycheck
           chef-mode
           go-mode
-		  go-autocomplete
-		  go-eldoc))
+          go-autocomplete
+          go-eldoc
+          multiple-cursors
+          smartrep
+		  rubocop))
