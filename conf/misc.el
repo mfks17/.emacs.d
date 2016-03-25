@@ -55,6 +55,10 @@
 ;                             :background "#ABF905"
 ;                             :height 0.9)))))
 
+;;ウィンドウサイズの位置、サイズ
+(if window-system (progn
+    (setq initial-frame-alist '((width . 200)(height . 50)(top . 0)(left . 00)))))
+
 (custom-set-variables
  '(global-linum-mode t)) ;; 常に行番号を表示
 
