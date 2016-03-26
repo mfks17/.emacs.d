@@ -3,6 +3,7 @@
 (let*
     ((path (list "~/homebrew/bin"
                  "~/.plenv/shims"
+				 "~/.rbenv/shims"
 				 "~/.go/bin"
 				 "~/.go/src/github.com/nsf/gocode/emacs"
 				 "~/.go/src/github.com/dougm/goflymake")))
