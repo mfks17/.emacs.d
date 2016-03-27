@@ -1,3 +1,7 @@
+;;; init.el ---  -*- lexical-binding: t; -*-
+;;; Commentary:
+;;; Code:
+
 (let*
     ((user-emacs-directory
      (substring (or load-file-name "~/.emacs.d/init.el") 0 -7))
@@ -6,7 +10,7 @@
                  "load-path.el"
                  "el-get.el"
                  "helm.el"
-				 "helm-go-package.el"
+                 "helm-go-package.el"
                  "auto-complete.el"
                  "perl-mode.el"
                  "perl-completion.el"
@@ -41,28 +45,21 @@
                  "helm-flycheck.el"
                  "yasnippet.el"
                  "chef-mode.el"
-				 "go-mode.el"
-				 "go-autocomplete.el"
-				 "go-eldoc.el"
-				 "theme.el"
+                 "go-mode.el"
+                 "go-autocomplete.el"
+                 "go-eldoc.el"
+                 "multiple-cursors.el"
+                 "smartrep.el"
+                 "theme.el"
                  )))
   (dolist (conf conf-list)
     (load (concat user-emacs-directory "conf/" conf))))
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(anzu-deactivate-region t)
- '(anzu-mode-lighter "")
- '(anzu-search-threshold 1000)
- '(flycheck-display-errors-function (function flycheck-pos-tip-error-messages))
- '(global-linum-mode t)
- '(tab-width 4))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(popup-tip-face ((t (:background "khaki1" :foreground "black"))))
- '(pos-tip-temp ((t (:slant normal :weight normal :height 120 :width normal :foundry "nil" :family "Monaco"))) t))
+
+(provide 'init)
+
+;; Local Variables:
+;; coding: utf-8
+;; indent-tabs-mode: nil
+;; End:
+
+;;; init.el ends here
