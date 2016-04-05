@@ -136,6 +136,12 @@
 ;; フレームの透明度
 (set-frame-parameter (selected-frame) 'alpha '(0.85))
 
+;; フレームの透過度と変更
+(defun set-alpha (alpha-num)
+  "set frame parameter 'alpha"
+  (interactive "nAlpha: ")
+  (set-frame-parameter nil 'alpha (cons alpha-num '(90))))
+
 ;; モードラインに行番号表示
 (line-number-mode t)
 
