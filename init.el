@@ -27,6 +27,7 @@
                  "helm-swoop.el"
                  "magit.el"
                  "git-gutter+.el"
+                 "git-gutter-fringe+.el"
                  "web-mode.el"
                  "rainbow-mode.el"
                  "emmet-mode.el"

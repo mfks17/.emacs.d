@@ -1,3 +1,7 @@
+;;; el-get.el ---  -*- lexical-binding: t; -*-
+;;; Commentary:
+;;; Code:
+
 (add-to-list 'load-path (concat user-emacs-directory "elisp/el-get"))
 
 (setq
@@ -19,7 +23,7 @@
 (el-get 'sync
         '(el-get
           helm
-		  helm-go-package
+          helm-go-package
           helm-swoop
           helm-migemo
           ace-isearch
@@ -32,6 +36,7 @@
           web-mode
           magit
           git-gutter+
+          git-gutter-fringe+
           undo-tree
           tabbar
           minimap
@@ -56,4 +61,13 @@
           go-eldoc
           multiple-cursors
           smartrep
-		  rubocop))
+          rubocop))
+
+(provide 'el-get)
+
+;; Local Variables:
+;; coding: utf-8
+;; indent-tabs-mode: nil
+;; End:
+
+;;; el-get.el ends here
