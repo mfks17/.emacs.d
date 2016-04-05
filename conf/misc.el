@@ -1,4 +1,11 @@
-;; common lisp
+;;; misc.el --- General settings -*- lexical-binding: t; -*-
+
+;;; Commentary:
+;;
+;; My General settings
+
+;;; Code:
+
 (require 'cl)
 
 ;; 文字コード
@@ -49,12 +56,6 @@
 (setq frame-title-format
       (format "%%f - Emacs@%s" (system-name)))
 
-;; 前景色を黒，背景色を赤にする．
-;(custom-set-faces
-; '(linum-highlight-face ((t (:foreground "#bf616a"
-;                             :background "#ABF905"
-;                             :height 0.9)))))
-
 ;;ウィンドウサイズの位置、サイズ
 (if window-system (progn
     (setq initial-frame-alist '((width . 200)(height . 50)(top . 0)(left . 00)))))
@@ -69,7 +70,6 @@
 (show-paren-mode t)
 (setq show-paren-delay 0)
 (setq show-paren-style 'expression)
-
 
 ;; 括弧の範囲色
 (set-face-background 'show-paren-match-face "#500")
@@ -133,14 +133,16 @@
       (run-with-idle-timer 0.03 t 'global-hl-line-timer-function))
 ;; (cancel-timer global-hl-line-timer)
 
-;; フレームの透明度
-(set-frame-parameter (selected-frame) 'alpha '(0.85))
+;; ハイライトの色
+;; http://homepage1.nifty.com/blankspace/emacs/emacs_rgb.html
+(custom-set-faces
+  '(hl-line ((t (:background "gray28")))))
 
-;; フレームの透過度と変更
+;; フレームの透過度変更の関数
 (defun set-alpha (alpha-num)
   "set frame parameter 'alpha"
   (interactive "nAlpha: ")
-  (set-frame-parameter nil 'alpha (cons alpha-num '(90))))
+  (set-frame-parameter nil 'alpha (cons alpha-num '(85)))) ;; デフォルト
 
 ;; モードラインに行番号表示
 (line-number-mode t)
@@ -168,3 +170,12 @@
 (global-set-key "\C-h" 'delete-backward-char)
 
 (global-set-key "\C-xf" 'recentf-open-files)
+
+(provide 'misc)
+
+;; Local Variables:
+;; coding: utf-8
+;; indent-tabs-mode: nil
+;; End:
+
+;;; misc.el ends here
