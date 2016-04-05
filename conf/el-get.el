@@ -35,8 +35,7 @@
           powerline
           web-mode
           magit
-          git-gutter+
-          git-gutter-fringe+
+          git-gutter
           undo-tree
           tabbar
           minimap
@@ -48,7 +47,6 @@
           flycheck
           flycheck-pos-tip
           yasnippet
-          hlinum
           smartparens
           migemo
           package
@@ -61,7 +59,8 @@
           go-eldoc
           multiple-cursors
           smartrep
-          rubocop))
+          rubocop
+          markdown-mode))
 
 (provide 'el-get)
 

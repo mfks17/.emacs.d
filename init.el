@@ -20,14 +20,12 @@
                  "helm-project.el"
                  "server.el"
                  "misc.el"
-                 "hlinum.el"
                  "smartparens.el"
                  "migemo.el"
                  "helm-migemo.el"
                  "helm-swoop.el"
                  "magit.el"
-                 "git-gutter+.el"
-                 "git-gutter-fringe+.el"
+                 "git-gutter.el"
                  "web-mode.el"
                  "rainbow-mode.el"
                  "emmet-mode.el"
@@ -51,6 +49,7 @@
                  "go-eldoc.el"
                  "multiple-cursors.el"
                  "smartrep.el"
+                 "markdown-mode.el"
                  "theme.el"
                  )))
   (dolist (conf conf-list)
