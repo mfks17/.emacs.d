@@ -139,6 +139,7 @@
   '(hl-line ((t (:background "gray28")))))
 
 ;; フレームの透過度変更の関数
+(set-frame-parameter (selected-frame) 'alpha '(0.85));
 (defun set-alpha (alpha-num)
   "set frame parameter 'alpha"
   (interactive "nAlpha: ")
