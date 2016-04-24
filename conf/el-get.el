@@ -47,7 +47,6 @@
           flycheck
           flycheck-pos-tip
           yasnippet
-          smartparens
           migemo
           package
           auto-install
@@ -60,6 +59,8 @@
           multiple-cursors
           smartrep
           rubocop
+          ruby-block
+          ruby-end
           markdown-mode))
 
 (provide 'el-get)

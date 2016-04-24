@@ -31,6 +31,8 @@
                  "emmet-mode.el"
                  "flycheck.el"
                  "ruby-mode.el"
+                 "ruby-block.el"
+                 "ruby-end.el"
                  "package.el"
                  "auto-install.el"
                  "tabbar.el"
