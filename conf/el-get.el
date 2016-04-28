@@ -61,6 +61,7 @@
           rubocop
           ruby-block
           ruby-end
+          js2-mode
           markdown-mode))
 
 (provide 'el-get)
