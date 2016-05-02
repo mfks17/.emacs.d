@@ -62,6 +62,7 @@
           ruby-block
           ruby-end
           js2-mode
+          docker
           markdown-mode))
 
 (provide 'el-get)
