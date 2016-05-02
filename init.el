@@ -50,8 +50,9 @@
                  "go-eldoc.el"
                  "js2-mode.el"
                  "multiple-cursors.el"
-                 "smartrep.el"
+                 "smartrep.el"d
                  "markdown-mode.el"
+                 "docker.el"
                  "theme.el"
                  )))
   (dolist (conf conf-list)
