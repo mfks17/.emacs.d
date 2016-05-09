@@ -50,7 +50,7 @@
                  "go-eldoc.el"
                  "js2-mode.el"
                  "multiple-cursors.el"
-                 "smartrep.el"d
+                 "smartrep.el"
                  "markdown-mode.el"
                  "docker.el"
                  "theme.el"
