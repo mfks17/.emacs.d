@@ -4,6 +4,7 @@
 ;; http://www.emacswiki.org/emacs/auto-install.el
 (when (require 'auto-install nil t)
   (setq auto-install-directory "~/.emacs.d/elisp/")
+  (setq auto-install-use-wget t)
   (auto-install-update-emacswiki-package-name t)
   (auto-install-compatibility-setup))
   (custom-set-faces
